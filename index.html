@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+     rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+     <link rel="stylesheet" href="nav.css">
+     <link rel="stylesheet" href="header.css">
+     <link rel="stylesheet" href="main.css">
+    <title>YouTube</title>
+</head>
+<body>
+    <nav class="site-nav">
+        <button class="site-nav_menu-trigger">
+            <span class="fas fa-bars"></span>
+            <a href="#" class="site-nav_logo-link">
+                <img class="site-nav_logo-img" src="https://place-hold.it/80x24/ff0000/ffffff/000000.png&text=FakeYoutube&bold&fontsize=10"
+                 alt="yt">
+            </a>
+        </button>
+        <div class="site-nav_search-wrapper">
+            <input placeholder="Search" type="search" class="site-nav_search-input">
+            <button type="button" class="site-nav_search-keyboard">
+                <span class="fas fa-keyboard"></span>
+            </button>
+            <button type="button" class="site-nav_search-trigger">
+                <span class="fas fa-search"></span>
+            </button>
+        </div>
+        <ul class="site-nav_user-actions">
+            <li class="site-nav_user-action is-mobile-search-trigger">
+                <button class="site-nav_action-trigger">
+                    <span class="fas fa-search"></span>
+                </button>
+            </li>
+            <li class="site-nav_user-action">
+                <button class="site-nav_action-trigger">
+                    <span class="fas fa-video"></span>
+                </button>
+            </li>
+            <li class="site-nav_user-action">
+                <button class="site-nav_action-trigger">
+                    <span class="fas fa-th"></span>
+                </button> 
+            </li>
+            <li class="site-nav_user-action is-mobile-hidden">
+                <button class="site-nav_action-trigger">
+                    <span class="fas fa-comment"></span>
+                </button>
+            </li>
+            <li class="site-nav_user-action is-mobile-hidden">
+                <button class="site-nav_action-trigger">
+                    <span class="fas fa-bell"></span>
+                </button>
+            </li>
+            <li class="site-nav_user-action">
+                <button class="site-nav_action-trigger 
+                is-user-avatar"></button>
+            </li>
+        </ul>
+    </nav>
+    <header class="channel-header">
+        <img class="channel-header_hero" src="https://place-hold.it/782x127/696e9e/ffffff&text=SuperChannel" alt="">
+        <div class="channel-header_details">
+            <img class="channel-header_avatar" src="https://place-hold.it/100x100/696e9e/ffffff&text=SuperChannel">
+            <div class="channel-header_wrapper">
+                <span class="channel-header_name">
+                    My channel
+                </span>
+                <span class="channel-header_subs-count">
+                    12 706 subscriptions
+                </span>
+            </div>
+            <button class="channel-header_subscribe">
+                Subscribed 12 000
+            </button>
+            <button class="channel-header_bell fa fa-bell"></button>
+        </div>
+        <nav class="channel-header_nav">
+            <button class="channel-header_slide-button
+            channel-header_prev fas fa-chevron-left"></button>
+            <ul class="channel-header_tabs">
+                <li class="channel-header_tab">
+                    <a href="#" class="channel-header_link">
+                        Main
+                    </a>
+                </li>
+                <li class="channel-header_tab channel-header_link-active">
+                    <a href="#" class="channel-header_link">
+                        Video
+                    </a>
+                </li>
+                <li class="channel-header_tab">
+                    <a href="#" class="channel-header_link">
+                        Playlists
+                    </a>
+                </li>
+                <li class="channel-header_tab">
+                    <a href="#" class="channel-header_link">
+                        Community
+                    </a>
+                </li>
+                <li class="channel-header_tab">
+                    <a href="#" class="channel-header_link">
+                        Channels
+                    </a>
+                </li>
+                <li class="channel-header_tab">
+                    <button class="channel-header_search
+                    fas fa-search"></button>
+                </li>
+            </ul>
+            <button class="channel-header_slide-button
+            channel-header_next fas fa-chevron-right"></button>
+        </nav>
+    </header>
+    <main class="video-section">
+        <nav class="video-section_nav">
+            <label for="video-section_filter" class="video-section_label-primary">
+                Uploaded videos
+                <span class="fas fa-caret-down"></span>
+            </label>
+            <select name="video-filter" id="video-section_filter"
+            class="video-section_filter">
+                <option value="all">
+                    All videos
+                </option>
+                <option value="uploaded">
+                    Uploaded videos
+                </option>
+                <option value="live">
+                    Live videos
+                </option>
+            </select>
+            <button class="video-section_play-all">
+                Play all
+            </button>
+            <label for="video-section_sort" class="video-section_label-secondary">
+                <span class="fas fa-align-left"></span>
+                Sort By
+            </label>
+            <select name="video-filter" id="video-section_sort"
+            class="video-section_sort">
+                <option value="most-popular">
+                    Most popular
+                </option>
+                <option value="added-desc">
+                    Time added (descending)
+                </option>
+                <option value="added-asc">
+                    Time add (ascending)
+                </option>
+            </select>
+        </nav>
+        <ul class="video-section_list">
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+            <li class="video-section_video">
+                <a href="#" class="video-section_video-link">
+                    <div class="video-section_thumbnail">
+                        <button class="video-section_watch-later fas fa-clock"></button>
+                        <span class="video-section_total-time">
+                            12:33
+                        </span>
+                    </div>
+                    <h4 class="video-section_video-name">
+                        CSS flexbox tutorial
+                        <button class="video-section_morde-details">
+                            <span class="fas fa-ellipsis-v"></span>
+                        </button>
+                    </h4>
+                    <span class="video-section_details">
+                        6.9k views, two years ago
+                    </span>
+                    <div class="video-section_badges">
+                        <span class="video-section_badge">
+                            CC
+                        </span>
+                        <span class="video-section_badge">
+                            HD
+                        </span>
+                    </div>   
+                </a>
+            </li>
+        </ul>
+    </main>
+    
+</body>
+</html>

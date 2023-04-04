@@ -1,0 +1,136 @@
+@import url(reset.css);
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif, 'Lato', sans-serif;
+}
+body{
+    background: #ddd;
+}
+.site-nav{
+    height: 5.6rem;
+    padding: 0 3.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+.site-nav_menu-trigger{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.3rem 0 0;
+}
+.site-nav_logo-link{
+    padding-left: 2.1rem;
+    display: flex;
+}
+.site-nav .fas{
+    padding: .8rem;
+    color: #909090;
+}
+.site-nav .fas:hover{
+    color: #ddd;
+}
+.site-nav button{
+    border-style: none;
+    background-color: #fff;
+}
+.site-nav .site-nav_search-input{
+    flex-shrink: 1;
+    flex-grow: 1;
+    border: .2rem solid #ddd;
+    border-right: none;
+    padding: 0 .5rem;
+    max-width: 50rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+button .fas.fa-keyboard{
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+}
+.fas.fa-keyboard:hover{
+    color: #ddd;
+}
+button.site-nav_search-keyboard{
+    display: flex;
+    border: .2rem solid #ddd;
+    border-left: none;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+}
+button.site-nav_search-trigger{
+    border: .2rem solid #ddd;
+    border-left: none;   
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    background: #f4f4f4;
+    align-items: center;
+    flex-shrink: 0;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+.site-nav_search-trigger .fas{
+    padding: 0;
+    margin: 0;
+}
+.site-nav .fas,
+.site-nav_search-input{
+    font-size: 1.8rem;
+}
+.site-nav > *{
+    flex-shrink: 0;
+}
+.site-nav_user-actions{
+    display: flex;
+    align-items: center;
+    width: 25rem;
+    justify-content: space-between;
+}
+.site-nav_user-actions .fas{
+    margin-right: 0;
+}
+.is-user-avatar::after{
+    content: "";
+    display: inline-block;
+    height: 3.2rem;
+    width: 3.2rem;
+    background: #ddd;
+    border-radius: 1.6rem;
+}
+.site-nav_search-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 72.8rem;
+    height: 3rem;
+    min-width: 0;
+}
+.is-mobile-search-trigger{
+    display: none;
+}
+@media all and (max-width: 770px){
+    .is-mobile-search-trigger{
+        display: block;
+    }
+    .site-nav_search-wrapper{
+        display: none;
+    }
+}
+@media all and (max-width: 400px){
+    .is-mobile-hidden{
+        display: none;
+    }
+    .site-nav_user-actions{
+        width: 20rem;
+    }
+}
+

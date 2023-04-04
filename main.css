@@ -1,0 +1,149 @@
+@import url(reset.css);
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif, 'Lato', sans-serif;
+}
+.video-section{
+    background: #fff;
+    padding: 1.6rem 3.3rem;
+}
+.video-section_video-link{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 21rem;
+}
+.video-section_thumbnail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 11.7rem;
+    background-image: url(https://place-hold.it/210x117/696e9e/ffffff/000000.png&text=AwesomeTutorial&bold&fontsize=10);
+}
+.video-section_total-time{
+    min-width: 4rem;
+    height: 1.6rem;
+    color: #fff;
+    margin: .4rem;
+    padding: .2rem .4rem;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    border-radius: .2rem;
+    line-height: 1.2rem;
+    opacity: 0.9;
+}
+.video-section_nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    padding: 0 6.3rem 0 0;
+}
+.video-section_label-primary{
+    color: #111;
+    font-size: 1.6rem;
+}
+.video-section_label-primary,
+.video-section_play-all,
+.video-section_label-secondary{
+    height: 3.6rem;
+    padding: 1rem 1.6rem;
+}
+.video-section_label-secondary,
+.video-section_play-all{
+    color: #606060;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.video-section_label-secondary .fas{
+    margin-right: .8rem;
+}
+.video-section_sort,
+.video-section_filter{
+    display: none;
+}
+.video-section_list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.video-section_video{
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.video-section_nav button{
+    border: none;
+    background-color: #fff;
+}
+.video-section_video-name button{
+    border: none;
+    background-color: #fff;
+    display: none;
+    color: #606060;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.8rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    opacity: 0.8;
+}
+.video-section_watch-later{
+    display: none;
+    margin: .4rem;
+    font-size: 1.8rem;
+    color: white;
+    background: #111;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .2rem;
+    opacity: 0.7;
+    line-height: 2.5rem;
+}
+.video-section_video-name{
+    color: #0a0a0a;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    position: relative;
+    padding-right: 2.4rem;
+    width: 100%;
+}
+.video-section_details{
+    font-size: 1.3rem;
+    color: #606060;
+    line-height: 1.8rem;
+    margin-bottom: .5rem;
+}
+.video-section_badge{
+    color: #606060;
+    display: inline-block;
+    font-size: 1.2rem;
+    min-height: 1.4rem;
+    line-height: 1.4rem;
+    background: rgba(0, 0, 0, 0.05);
+    min-width: 4.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-right: .5rem;
+    padding: .3rem;
+}
+.video-section_video-link:hover .video-section_video-name button{
+    display: block;
+}
+.video-section_video-link:hover .video-section_watch-later{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media all and (max-width: 514px){
+    .video-section_nav{
+        padding: 0;
+    }
+}

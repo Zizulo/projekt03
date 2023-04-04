@@ -1,0 +1,135 @@
+@import url(reset.css);
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif, 'Lato', sans-serif;
+}
+.channel-header_hero{
+    width: 100%;
+}
+.channel-header{
+    background-color: #fafafa;
+}
+.channel-header button{
+    border: none;
+}
+.channel-header_details,
+.channel-header_nav{
+    padding: 0 10rem;
+}
+.channel-header_nav{
+    position: relative;
+}
+.channel-header_avatar{
+    border-radius: 50%;
+    margin-right: 2.5rem;
+    width: 8rem;
+    height: 8rem;
+}
+.channel-header_details{
+    display: flex;
+    align-items: center;
+    padding-top: 1.6rem;
+}
+.channel-header_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.channel-header_name{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.channel-header_subs-count{
+    font-size: 1.4rem;
+    color: #606060;
+    padding: .3rem 0 0 0;
+}
+.channel-header_subscribe{
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    color: rgba(17,17,17,0.6);
+    background-color: #eee;
+    padding: 1rem 1.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.channel-header_bell{
+    font-size: 2.4rem;
+    color: #909090;
+    background-color: #fafafa;
+}
+.channel-header_tabs{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.channel-header_link{
+    padding: 0 3.2rem;
+    color: #606060;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+}
+.channel-header_link-active{
+    border-bottom: .3rem solid rgba(10,10,10,1);
+}
+.channel-header_slide-button{
+    position: absolute;
+    font-size: 1.4rem;
+    color: #606060;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background: #fafafa;
+    z-index: 1;
+    top: 0;
+    transition: background 0.1s linear;
+}
+.channel-header_slide-button:active{
+    background: #ddd;
+}
+.channel-header_next{
+    display: none;
+    right: 0;
+}
+.channel-header_prev{
+    display: none;
+    left: calc(10rem - 4.8rem);
+}
+.channel-header_search{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #606060;
+    font-size: 1.4rem;
+    background-color: #fafafa;
+}
+@media all and (max-width: 779px){
+    .channel-header_prev{
+        display: flex;
+        align-items: center;
+    }
+    .channel-header_next{
+        display: flex;
+        align-items: center;
+    }
+    .channel-header_avatar{
+        display: none;
+    }
+    .channel-header_details,
+    .channel-header_details{
+        padding: 1.6rem 8rem 0;
+    }
+    .channel-header_name{
+        font-size: 1.8rem;
+    }
+    .channel-header_details{
+        padding: 1.6rem 1.6rem 0;
+    }
+}
